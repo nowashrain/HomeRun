@@ -1,6 +1,6 @@
 from pydantic.v1 import BaseSettings
 
-class Setting(BaseSettings):
+class Settings(BaseSettings):
     userid: str = 'ubuntu'
     passwd: str = 'ubuntu'
     dbname: str = 'clouds2024'
@@ -10,4 +10,4 @@ class Setting(BaseSettings):
     #dbconn: str = f'mysql+pymysql://{userid}:{passwd}@{dburl}:3306/{dbname}?charset=utf8mb4'
 
 
-config = Setting()
+config = Settings()
